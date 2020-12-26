@@ -1,0 +1,44 @@
+html {
+    background: url(/images/spotify-background.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100;
+    overflow: hidden;
+}
+
+body {
+    max-width: 40em;
+    margin: auto;
+    margin-top: 6em;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+input {
+    font: inherit;
+    border: 0;
+    padding: 1em;
+}
+
+button {
+    font: inherit;
+    color: white;
+    border: 0;
+    padding: 1em;
+    background-color: rgb(197, 71, 71)
+}
+
+form {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 2em;
+    
+}
+
+form input {
+    flex: 1;
+}
+
+.Home1 {
+    margin: 0 auto;
+    margin-top: 5em;
+}
