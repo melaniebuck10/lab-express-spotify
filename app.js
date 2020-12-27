@@ -37,12 +37,11 @@ app.get('/', (request, response) => {
 
 app.get('/artist-search', (request, response) => {
   const searchQuery = request.query.q;
-  spotifyApi.searchArtists(searchQuery)
+  spotifyApi.searchArtists(searchQuery.toLowerCase())
   .then(data => {
-    console.log('The received data from the API: ', data.body);
-    const artists = data.items;
-    response.render('artist-search-results', {
-      searchQuery: searchQuery
+    console.log('The received data from the API: ', data.body.artists.items);
+    const response = data.body.artists.items;
+    response.render('artist-search-results', {artist:response
   })
   //.catch(err => console.log('The error while searching artists occurred: ', err));
   });

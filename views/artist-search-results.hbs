@@ -2,9 +2,13 @@
 
 <h3>You searched for "{{ searchQuery }}"</h3>
 
-{{#each artists}}
-<div>
-    {{Name}}
-
+<div class="artists">
+  {{#each artist}}
+  <div class="artist">
+    <a href="/albums/{{ this.id }}">
+      <img src="{{this.images.[0].url}}" />
+      <h3>{{ this.name }}</h3>
+    </a>   
+    </div>
+    {{/each}}
 </div>
-{{/each}}
