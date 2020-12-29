@@ -1,14 +1,6 @@
-<h1>Results</h1>
 
-<h3>You searched for "{{ searchQuery }}"</h3>
-
-<div class="artists">
-  {{#each artist}}
-  <div class="artist">
-    <a href="/albums/{{ this.id }}">
-      <img src="{{this.images.[0].url}}" />
-      <h3>{{ this.name }}</h3>
-    </a>   
-    </div>
-    {{/each}}
-</div>
+ 		{{#each artists}}
+     <h5 class="card-title" style="width: 10rem;" "height: 5em">{{ this.name }}</h5>
+ 				<a href="/albums/{{ this.id }}" class="btn btn-primary">View Albums</a>
+ 			<img src="{{this.images.[0].url}}" class="card-img-top" alt="..." />
+ 		{{/each}}
