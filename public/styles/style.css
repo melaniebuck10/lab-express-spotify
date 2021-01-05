@@ -9,6 +9,7 @@ body {
     margin-top: 6em;
     font-family: sans-serif;
     line-height: 1.5;
+    
 }
 
 input {
@@ -38,4 +39,48 @@ form input {
 .Home1 {
     margin: 0 auto;
     margin-top: 5em;
+}
+
+.search-results {
+    display: flex;
+    flex-wrap: wrap;
+    backdrop-filter: grayscale(1) opacity(0.8)
+
+}
+
+.single-result {
+    width: 25%;
+    padding: 1em;
+    display: block;
+
+}
+
+.single-result-image img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+}
+
+.single-result-information {
+    text-align: center;
+
+}
+
+.button{
+    font-size: 14px;
+    border: 12;
+    color: white;
+}
+
+.track-table {
+    backdrop-filter: grayscale(1) opacity(0.8);
+    display: block;
+    text-align: center;
+}
+
+.tracks-header {
+    font-size: 18px;
 }

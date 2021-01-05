@@ -1,6 +1,15 @@
+<h1 class="Results1">You have searched for {{ q }}</h1>
 
+<section class='search-results'>
  		{{#each artists}}
-     <h5 class="card-title" style="width: 10rem;" "height: 5em">{{ this.name }}</h5>
- 				<a href="/albums/{{ this.id }}" class="btn btn-primary">View Albums</a>
-<img src="{{images.[2].url}}" class="card-img-top" alt="..." />
+		 <div class='single-result'>
+			 <div class='single-result-image'>
+				 <img src="{{images.[2].url}}" alt="{{ this.name }}" />
+				 </div>
+			<div class='single-result-information'>
+  			<h4>{{ this.name }}</h4>
+	 		<a href="/albums/{{ this.id }}" class="button"><h4>View Albums</h4></a>
+			 </div>
+					 </div>
  		{{/each}}
+</section>
